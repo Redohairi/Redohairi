@@ -25,8 +25,10 @@
 
 - ⚙️ Engenheiro de Software especializado em **backend, automação de processos (RPA) e pipelines de dados em escala**
 - 🏛️ Experiência com sistemas críticos de alta disponibilidade em ambientes governamentais **(INSS/DTI)**
+- 🎓 Graduando em **Computação — Licenciatura pela Universidade de Brasília (UnB)**
+- 🔬 Futuro pesquisador com interesse em **IA, sistemas distribuídos e engenharia de dados**
 - 🧱 Apaixonado por **Clean Architecture, SOLID e TDD** aplicados a problemas reais de concorrência e integração
-- 🌎 Based in Brasília, Brasil
+- 🌎 Brasília, Brasil
 
 ---
 
@@ -35,8 +37,9 @@
 | Status | Detalhe |
 | :--- | :--- |
 | 🚀 Trabalhando em | Plataforma de dados linguísticos multimodais para alinhamento de LLMs (RLHF/DPO) |
+| 🎓 Cursando | Computação Licenciatura — UnB |
 | 📚 Estudando | Sistemas Distribuídos, Data Engineering avançado e MLOps |
-| 🎯 Objetivo | Contribuir com projetos open source de infra de dados e IA |
+| 🔬 Objetivo | Pesquisa aplicada em IA, NLP e alinhamento de modelos de linguagem |
 
 ---
 
@@ -130,5 +133,5 @@
 ---
 
 <div align="center">
-  <sub>Feito com ☕ e muitas linhas de código</sub>
+  <sub>Feito com ☕ e muitas linhas de código · UnB · Brasília</sub>
 </div>
