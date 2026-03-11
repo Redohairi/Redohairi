@@ -24,7 +24,7 @@
 ## 👨‍💻 Sobre mim
 
 - ⚙️ Engenheiro de Software especializado em **backend, automação de processos (RPA) e pipelines de dados em escala**
-- 🏛️ Experiência com sistemas críticos de alta disponibilidade em ambientes governamentais **(INSS/DTI)**
+- 🏛️ Experiência com sistemas críticos de alta disponibilidade em ambientes governamentais **(INSS/DTI)** — monitoramento de infraestrutura, detecção de incidentes e automação de processos operacionais
 - 🎓 Graduando em **Computação — Licenciatura pela Universidade de Brasília (UnB)**
 - 🔬 Futuro pesquisador com interesse em **IA, sistemas distribuídos e engenharia de dados**
 - 🧱 Apaixonado por **Clean Architecture, SOLID e TDD** aplicados a problemas reais de concorrência e integração
@@ -55,12 +55,16 @@
 
 ---
 
-### 🤖 [Automação de Monitoramento NOC](https://github.com/Redohairi)
-> Sistema de *scraping* paralelo para monitoramento em tempo real de infraestruturas de rede críticas.
+### 🤖 [Plataforma de Monitoramento de Infraestrutura — INSS/DTI](https://github.com/Redohairi)
+> Sistema de observabilidade e detecção de incidentes para monitoramento em tempo real de agências e circuitos de rede do INSS, integrado ao Zabbix.
 
-- **Escala:** Coleta simultânea em **+2.000 endpoints SOAP** com tolerância a falhas e *retries* automáticos
-- **Engenharia:** Controle de *rate limit* e execução assíncrona para evitar bloqueios e gargalos
-- ![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white) ![Asyncio](https://img.shields.io/badge/Asyncio-3776AB?style=flat&logo=python&logoColor=white) ![BeautifulSoup4](https://img.shields.io/badge/BeautifulSoup4-59666C?style=flat&logo=python&logoColor=white) ![Playwright](https://img.shields.io/badge/Playwright-45ba4b?style=flat&logo=playwright&logoColor=white)
+- **Telemetria distribuída:** Pipeline de coleta paralela consultando **+2.200 endpoints SOAP** via `multithreading`, com parsing automático de respostas XML/HTML
+- **Correlação de eventos:** Lógica para detecção automática de início e fim de incidentes operacionais a partir de análise de estados (`from_state` / `to_state`)
+- **ETL leve:** Ingestão → transformação → exportação de datasets estruturados (CSV) com campos como `data_Hora_Inicio`, `Evento_Inicio`, `Evento_Fim`, `ID APS`, `Nome da APS`
+- **Automação de tickets:** Integração com **Redmine** para atualização automática de issues a partir dos dados coletados, incluindo campos como Designação Telebrás
+- **Automação web:** Scripts com **Selenium** para interação com sistemas legados internos — login, navegação e extração de dados
+- **Arquitetura:** Evolução do projeto para padrão MVC com separação de entidades e utilitários reutilizáveis
+- ![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white) ![Zabbix](https://img.shields.io/badge/Zabbix-CC0000?style=flat&logo=zabbix&logoColor=white) ![Selenium](https://img.shields.io/badge/Selenium-43B02A?style=flat&logo=selenium&logoColor=white) ![Redmine](https://img.shields.io/badge/Redmine-B32024?style=flat&logo=redmine&logoColor=white) ![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat&logo=docker&logoColor=white)
 
 ---
 
@@ -105,10 +109,17 @@
 
 ![Selenium](https://img.shields.io/badge/Selenium-43B02A?style=for-the-badge&logo=selenium&logoColor=white)
 ![Playwright](https://img.shields.io/badge/Playwright-45ba4b?style=for-the-badge&logo=playwright&logoColor=white)
-![BeautifulSoup4](https://img.shields.io/badge/BeautifulSoup4-59666C?style=for-the-badge&logo=python&logoColor=white)
+![BeautifulSoup4](https://img.shields.io/badge/BeautifulSoup4-59666C?style=for-the-goColor=white)
 ![Requests](https://img.shields.io/badge/Requests-3776AB?style=for-the-badge&logo=python&logoColor=white)
 ![UiPath](https://img.shields.io/badge/UiPath-FA4616?style=for-the-badge&logo=uipath&logoColor=white)
 ![Power Automate](https://img.shields.io/badge/Power%20Automate-0066FF?style=for-the-badge&logo=powerautomate&logoColor=white)
+
+**Observabilidade & Infra**
+
+![Zabbix](https://img.shields.io/badge/Zabbix-CC0000?style=for-the-badge&logo=zabbix&logoColor=white)
+![Redmine](https://img.shields.io/badge/Redmine-B32024?style=for-the-badge&logo=redmine&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
+![GitHub Actions](https://img.shields.io/badge/GitHub%20Actions-2088FF?style=for-the-badge&logo=githubactions&logoColor=white)
 
 **QA & Boas Práticas**
 
@@ -116,11 +127,6 @@
 ![TDD](https://img.shields.io/badge/TDD-Test%20Driven-brightgreen?style=for-the-badge)
 ![Clean Architecture](https://img.shields.io/badge/Clean%20Architecture-333333?style=for-the-badge)
 ![SOLID](https://img.shields.io/badge/SOLID-6DB33F?style=for-the-badge)
-
-**Infra & DevOps**
-
-![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
-![GitHub Actions](https://img.shields.io/badge/GitHub%20Actions-2088FF?style=for-the-badge&logo=githubactions&logoColor=white)
 
 ---
 
