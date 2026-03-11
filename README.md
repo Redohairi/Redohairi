@@ -1,6 +1,17 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=180&section=header&text=Davi%20Borges&fontSize=42&fontColor=fff&animation=twinkling&fontAlignY=32&desc=Software%20Engineer%20%7C%20Backend%20%26%20Data%20Engines&descAlignY=55&descSize=18" width="100%" />
+<svg width="800" height="160" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#0d1117;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#161b22;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0d1117;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <rect width="800" height="160" fill="url(#grad)" rx="10"/>
+  <text x="400" y="75" font-family="monospace" font-size="32" font-weight="bold" fill="white" text-anchor="middle">Davi Borges</text>
+  <text x="400" y="110" font-family="monospace" font-size="15" fill="#58a6ff" text-anchor="middle">Software Engineer · Backend &amp; Data Engines · Python &amp; TypeScript</text>
+</svg>
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/davi-csb/)
 [![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Redohairi)
@@ -113,16 +124,11 @@
 ## 📈 GitHub Analytics
 
 <div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=Redohairi&show_icons=true&theme=radical&hide_border=true" alt="Estatísticas do GitHub" width="48%" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Redohairi&layout=compact&theme=radical&hide_border=true" alt="Linguagens Mais Usadas" width="48%" />
-</div>
-
-<div align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=Redohairi&theme=radical&hide_border=true" alt="GitHub Streak" width="60%" />
+  <img src="github-metrics.svg" alt="GitHub Metrics" width="100%" />
 </div>
 
 ---
 
 <div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=100&section=footer" width="100%" />
+  <sub>Feito com ☕ e muitas linhas de código</sub>
 </div>
