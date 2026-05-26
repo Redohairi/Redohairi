@@ -22,15 +22,15 @@
 
 ---
 
-## 👨‍💻 Meu perfil
+## 👨‍💻 Perfil Profissional
 
 Engenheiro de Software com sólida base acadêmica pela **Universidade de Brasília (UnB)** e mais de 3 anos de experiência prática no desenvolvimento e sustentação de sistemas críticos. Especialista em arquitetura backend, automação de processos (RPA) e orquestração de dados em ambientes de alta disponibilidade.
 
-- **Experiência Enterprise:** 3 anos de atuação no ecossistema governamental (**INSS/DTI**), focado em monitoramento de infraestrutura, detecção de incidentes e telemetria distribuída.
-- **Pesquisa & Inovação (IA/NLP):** Desenvolvedor principal de soluções voltadas para o alinhamento de LLMs e estruturação de data engines para preservação linguística (projeto Kayapó/Mebêngôkre).
+- **Experiência Enterprise:** 2 anos de atuação no ecossistema governamental (**INSS/DTI**), projetando ferramentas operacionais e pipelines de automação para monitoramento e integração corporativa.
+- **Pesquisa & Inovação (IA/NLP):** Desenvolvedor principal de soluções voltadas para preservação linguística de povos originários (projeto Kayapó/Mebêngôkre) e construção de data engines para alinhamento de LLMs.
 - **Desenvolvimento Full-Cycle:** Experiência atuando diretamente com clientes corporativos na entrega de plataformas web responsivas (React) integradas a backends robustos (FastAPI/Python).
 - **Engenharia de Qualidade:** Aplicação rigorosa de **Clean Architecture, SOLID e TDD** para resolver problemas complexos de concorrência e resiliência em sistemas distribuídos.
-- 📍 Cidade Ocidental - GO
+- 📍 Cidade Ocidental - GO.
 
 ---
 
@@ -47,12 +47,13 @@ Engenheiro de Software com sólida base acadêmica pela **Universidade de Brasí
 
 ## 🚀 Projetos em Destaque
 
-### 🌐 [Mebêngôkre Data Engine & API](https://github.com/Redohairi) *(Projeto IA/RLHF)*
-> Plataforma backend distribuída para coleta e revisão de dados linguísticos multimodais (Áudio/Texto), projetada para alinhar LLMs via *Direct Preference Optimization* (Intel Gaudi).
+### 🌐 [Mebêngôkre Data Engine & API (mbg_pt)](https://github.com/Redohairi/mbg_pt) *(Projeto de Preservação Linguística & IA/RLHF)*
+> Plataforma backend corporativa e distribuída projetada para a preservação do idioma indígena Kayapó (Mebêngôkre). O sistema atua na orquestração, revisão e validação de dados multimodais (Áudio/Texto) para alinhar LLMs via *Direct Preference Optimization* (DPO) utilizando aceleradores Intel Gaudi.
 
-- **Concorrência Otimizada:** Orquestração de micro-tarefas com `SELECT FOR UPDATE SKIP LOCKED` no PostgreSQL, garantindo zero *race conditions* com dezenas de workers simultâneos.
-- **Resiliência Serverless:** Rotas idempotentes com NeonDB Serverless e pooling duplo (PgBouncer/Direct) para mitigar latência de *cold starts*.
-- **Data Engineering:** Pipeline ETL incremental processando **+440k sentenças** com NLTK e algoritmos de deduplicação via SHA256.
+- **Pipelines de Exportação & ML:** Arquitetura orientada a dados com fluxos de ETL customizados para treinamento de modelos de IA, integrando submódulos específicos para exportação de dados voltados a **ASR** *(Speech Recognition)*, **TTS** *(Text-to-Speech)*, **SFT** e **DPO**.
+- **Motor de Validação (Eligibility Engine):** Implementação de uma camada de validação robusta utilizando validadores linguísticos e simbólicos que garantem a governança, consistência estrutural e a integridade dos dados coletados.
+- **Concorrência Otimizada & Resiliência:** Orquestração segura de micro-tarefas com `SELECT FOR UPDATE SKIP LOCKED` no PostgreSQL, garantindo zero *race conditions* com múltiplos workers simultâneos. Serviços arquitetados com foco em idempotência.
+- **Qualidade & Segurança (TDD e RBAC):** Cobertura extensiva de testes validando transições de estado, concorrência, limites de taxa (*rate limiting*) e um sistema estrito de controle de acesso baseado em papéis (RBAC) para gerenciar fluxos de revisão e dead letters.
 
 <p align="left">
   <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" alt="Python" />
@@ -62,23 +63,22 @@ Engenheiro de Software com sólida base acadêmica pela **Universidade de Brasí
   <img src="https://img.shields.io/badge/SQLAlchemy-D71F00?style=flat-square&logo=sqlalchemy&logoColor=white" alt="SQLAlchemy" />
 </p>
 
-### 🤖 [Plataforma de Monitoramento de Infraestrutura — INSS/DTI](https://github.com/Redohairi)
-> Sistema de observabilidade e detecção de incidentes para monitoramento em tempo real de agências e circuitos de rede governamentais, integrado ao Zabbix.
+### 🤖 [Plataforma de Monitoramento e Automação Operacional — INSS/DTI](https://github.com/Redohairi)
+> Ecossistema interno de observabilidade, automação de incidentes e integração corporativa entre sistemas legados, utilizado no monitoramento de infraestrutura crítica e circuitos de conectividade do ambiente governamental.
 
-- **Telemetria Distribuída:** Pipeline de coleta paralela consultando **+2.200 endpoints SOAP** via `multithreading`, com parsing automático de respostas XML/HTML.
-- **Correlação e Automação:** Algoritmo para detecção de incidentes via transições de estado operacionais (`from_state` / `to_state`) e integração direta com o **Redmine** para atualização automatizada de tickets.
-- **ETL e RPA:** Ingestão, transformação e exportação de datasets estruturados; uso avançado de **Selenium** para navegação e extração de dados em sistemas legados.
+- **Coleta Distribuída & Telemetria:** Implementação de pipelines de dados concorrentes via `multithreading` para consulta paralela de **+2.200 endpoints SOAP/XML**, reduzindo drasticamente a latência de diagnóstico e acompanhando em tempo real a disponibilidade de agências distribuídas nacionalmente.
+- **Integração com Sistemas Legados & ETL:** Construção de rotinas integradas ao Zabbix e Monitor.INSS, atuando na ingestão, normalização (CSV/Excel) e consumo de APIs REST/SOAP com parsing avançado de XML e HTML.
+- **Automação ITSM & Integração Ruby on Rails:** Desenvolvimento de mecanismos de correlação de incidentes baseados em transições de estado (`from_state` / `to_state`). Essa lógica orquestrava a atualização automatizada de chamados operacionais no **Redmine**, envolvendo integração direta com aplicações baseadas em **Ruby on Rails**.
+- **RPA Corporativo:** Pipeline de automação web via **Selenium** para autenticação, navegação dinâmica e extração de dados em plataformas restritas, eliminando atividades manuais repetitivas e acelerando o troubleshooting na operação N1/N2.
 
 <p align="left">
   <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" alt="Python" />
+  <img src="https://img.shields.io/badge/Ruby_on_Rails-CC0000?style=flat-square&logo=ruby-on-rails&logoColor=white" alt="Ruby on Rails" />
   <img src="https://img.shields.io/badge/Zabbix-CC0000?style=flat-square&logo=zabbix&logoColor=white" alt="Zabbix" />
   <img src="https://img.shields.io/badge/Selenium-43B02A?style=flat-square&logo=selenium&logoColor=white" alt="Selenium" />
   <img src="https://img.shields.io/badge/Redmine-B32024?style=flat-square&logo=redmine&logoColor=white" alt="Redmine" />
 </p>
 
-<p align="left">
-
----
 
 ## 🧰 Stack Tecnológico
 
@@ -91,7 +91,7 @@ Engenheiro de Software com sólida base acadêmica pela **Universidade de Brasí
 ![Django](https://img.shields.io/badge/Django-092E20?style=for-the-badge&logo=django&logoColor=white)
 ![Flask](https://img.shields.io/badge/Flask-000000?style=for-the-badge&logo=flask&logoColor=white)
 ![NodeJS](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)
-![NestJS](https://img.shields.io/badge/NestJS-E0234E?style=for-the-badge&logo=nestjs&logoColor=white)
+![Ruby on Rails](https://img.shields.io/badge/Ruby_on_Rails-CC0000?style=for-the-badge&logo=ruby-on-rails&logoColor=white)
 ![C++](https://img.shields.io/badge/C++-00599C?style=for-the-badge&logo=cplusplus&logoColor=white)
 </details>
 
