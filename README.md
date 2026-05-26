@@ -1,45 +1,47 @@
 <div align="center">
 
-<svg width="800" height="160" xmlns="http://www.w3.org/2000/svg">
+<svg width="800" height="150" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" style="stop-color:#0d1117;stop-opacity:1" />
-      <stop offset="50%" style="stop-color:#161b22;stop-opacity:1" />
-      <stop offset="100%" style="stop-color:#0d1117;stop-opacity:1" />
+    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0A0E17;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#161B22;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0A0E17;stop-opacity:1" />
     </linearGradient>
   </defs>
-  <rect width="800" height="160" fill="url(#grad)" rx="10"/>
-  <text x="400" y="75" font-family="monospace" font-size="32" font-weight="bold" fill="white" text-anchor="middle">Davi Borges</text>
-  <text x="400" y="110" font-family="monospace" font-size="15" fill="#58a6ff" text-anchor="middle">Software Engineer · Backend &amp; Data Engines · Python &amp; TypeScript</text>
+  <rect width="800" height="150" fill="url(#grad)" rx="8"/>
+  <text x="400" y="70" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="32" font-weight="800" fill="#FFFFFF" text-anchor="middle" letter-spacing="1">Davi Borges</text>
+  <text x="400" y="105" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="15" fill="#58A6FF" text-anchor="middle" font-weight="500" letter-spacing="0.5">Software Engineer · Backend Architecture & Data Pipelines</text>
 </svg>
 
+<br>
+
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/davi-csb/)
-[![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Redohairi)
 [![E-mail](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:daviborges07@gmail.com)
 
 </div>
 
 ---
 
-## 👨‍💻 Sobre mim
+## 👨‍💻 Meu perfil
 
-- ⚙️ Engenheiro de Software especializado em **backend, automação de processos (RPA) e pipelines de dados em escala**
-- 🏛️ Experiência com sistemas críticos de alta disponibilidade em ambientes governamentais **(INSS/DTI)** — monitoramento de infraestrutura, detecção de incidentes e automação de processos operacionais
-- 🎓 Graduando em **Computação — Licenciatura pela Universidade de Brasília (UnB)**
-- 🔬 Futuro pesquisador com interesse em **IA, sistemas distribuídos e engenharia de dados**
-- 🧱 Apaixonado por **Clean Architecture, SOLID e TDD** aplicados a problemas reais de concorrência e integração
-- 🌎 Brasília, Brasil
+Engenheiro de Software com sólida base acadêmica pela **Universidade de Brasília (UnB)** e mais de 3 anos de experiência prática no desenvolvimento e sustentação de sistemas críticos. Especialista em arquitetura backend, automação de processos (RPA) e orquestração de dados em ambientes de alta disponibilidade.
+
+- **Experiência Enterprise:** 3 anos de atuação no ecossistema governamental (**INSS/DTI**), focado em monitoramento de infraestrutura, detecção de incidentes e telemetria distribuída.
+- **Pesquisa & Inovação (IA/NLP):** Desenvolvedor principal de soluções voltadas para o alinhamento de LLMs e estruturação de data engines para preservação linguística (projeto Kayapó/Mebêngôkre).
+- **Desenvolvimento Full-Cycle:** Experiência atuando diretamente com clientes corporativos na entrega de plataformas web responsivas (React) integradas a backends robustos (FastAPI/Python).
+- **Engenharia de Qualidade:** Aplicação rigorosa de **Clean Architecture, SOLID e TDD** para resolver problemas complexos de concorrência e resiliência em sistemas distribuídos.
+- 📍 Cidade Ocidental - GO
 
 ---
 
-## 🔭 Atualmente
+## 🔭 Panorama Atual
 
-| Status | Detalhe |
+| Foco | Descrição |
 | :--- | :--- |
-| 🚀 Trabalhando em | Plataforma de dados linguísticos multimodais para alinhamento de LLMs (RLHF/DPO) |
-| 🎓 Cursando | Computação Licenciatura — UnB |
-| 📚 Estudando | Sistemas Distribuídos, Data Engineering avançado e MLOps |
-| 🔬 Objetivo | Pesquisa aplicada em IA, NLP e alinhamento de modelos de linguagem |
+| **🚀 Construindo** | Plataforma de dados linguísticos multimodais para alinhamento de LLMs (RLHF/DPO) |
+| **🎓 Formação** | Licenciatura em Computação / Ciência da Computação — UnB |
+| **📚 Especialização** | Sistemas Distribuídos, Data Engineering avançado e MLOps |
+| **🎯 Objetivos** | Pesquisa aplicada em IA, NLP e arquitetura de modelos de linguagem |
 
 ---
 
@@ -48,38 +50,41 @@
 ### 🌐 [Mebêngôkre Data Engine & API](https://github.com/Redohairi) *(Projeto IA/RLHF)*
 > Plataforma backend distribuída para coleta e revisão de dados linguísticos multimodais (Áudio/Texto), projetada para alinhar LLMs via *Direct Preference Optimization* (Intel Gaudi).
 
-- **Concorrência:** Orquestração de micro-tarefas com `SELECT FOR UPDATE SKIP LOCKED` no PostgreSQL — zero *race conditions* com dezenas de workers simultâneos
-- **Resiliência:** Rotas idempotentes + NeonDB Serverless com pooling duplo (PgBouncer/Direct) para evitar *cold starts*
-- **Dados:** Pipeline ETL incremental processando **+440k sentenças** com NLTK, deduplicação via SHA256
-- ![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white) ![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat&logo=fastapi&logoColor=white) ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=flat&logo=postgresql&logoColor=white) ![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat&logo=docker&logoColor=white) ![SQLAlchemy](https://img.shields.io/badge/SQLAlchemy-D71F00?style=flat&logo=sqlalchemy&logoColor=white)
+- **Concorrência Otimizada:** Orquestração de micro-tarefas com `SELECT FOR UPDATE SKIP LOCKED` no PostgreSQL, garantindo zero *race conditions* com dezenas de workers simultâneos.
+- **Resiliência Serverless:** Rotas idempotentes com NeonDB Serverless e pooling duplo (PgBouncer/Direct) para mitigar latência de *cold starts*.
+- **Data Engineering:** Pipeline ETL incremental processando **+440k sentenças** com NLTK e algoritmos de deduplicação via SHA256.
 
----
+<p align="left">
+  <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" alt="Python" />
+  <img src="https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white" alt="FastAPI" />
+  <img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white" alt="PostgreSQL" />
+  <img src="https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white" alt="Docker" />
+  <img src="https://img.shields.io/badge/SQLAlchemy-D71F00?style=flat-square&logo=sqlalchemy&logoColor=white" alt="SQLAlchemy" />
+</p>
 
 ### 🤖 [Plataforma de Monitoramento de Infraestrutura — INSS/DTI](https://github.com/Redohairi)
-> Sistema de observabilidade e detecção de incidentes para monitoramento em tempo real de agências e circuitos de rede do INSS, integrado ao Zabbix.
+> Sistema de observabilidade e detecção de incidentes para monitoramento em tempo real de agências e circuitos de rede governamentais, integrado ao Zabbix.
 
-- **Telemetria distribuída:** Pipeline de coleta paralela consultando **+2.200 endpoints SOAP** via `multithreading`, com parsing automático de respostas XML/HTML
-- **Correlação de eventos:** Lógica para detecção automática de início e fim de incidentes operacionais a partir de análise de estados (`from_state` / `to_state`)
-- **ETL leve:** Ingestão → transformação → exportação de datasets estruturados (CSV) com campos como `data_Hora_Inicio`, `Evento_Inicio`, `Evento_Fim`, `ID APS`, `Nome da APS`
-- **Automação de tickets:** Integração com **Redmine** para atualização automática de issues a partir dos dados coletados, incluindo campos como Designação Telebrás
-- **Automação web:** Scripts com **Selenium** para interação com sistemas legados internos — login, navegação e extração de dados
-- **Arquitetura:** Evolução do projeto para padrão MVC com separação de entidades e utilitários reutilizáveis
-- ![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white) ![Zabbix](https://img.shields.io/badge/Zabbix-CC0000?style=flat&logo=zabbix&logoColor=white) ![Selenium](https://img.shields.io/badge/Selenium-43B02A?style=flat&logo=selenium&logoColor=white) ![Redmine](https://img.shields.io/badge/Redmine-B32024?style=flat&logo=redmine&logoColor=white) ![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat&logo=docker&logoColor=white)
+- **Telemetria Distribuída:** Pipeline de coleta paralela consultando **+2.200 endpoints SOAP** via `multithreading`, com parsing automático de respostas XML/HTML.
+- **Correlação e Automação:** Algoritmo para detecção de incidentes via transições de estado operacionais (`from_state` / `to_state`) e integração direta com o **Redmine** para atualização automatizada de tickets.
+- **ETL e RPA:** Ingestão, transformação e exportação de datasets estruturados; uso avançado de **Selenium** para navegação e extração de dados em sistemas legados.
 
----
+<p align="left">
+  <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" alt="Python" />
+  <img src="https://img.shields.io/badge/Zabbix-CC0000?style=flat-square&logo=zabbix&logoColor=white" alt="Zabbix" />
+  <img src="https://img.shields.io/badge/Selenium-43B02A?style=flat-square&logo=selenium&logoColor=white" alt="Selenium" />
+  <img src="https://img.shields.io/badge/Redmine-B32024?style=flat-square&logo=redmine&logoColor=white" alt="Redmine" />
+</p>
 
-### 🔄 [API de Enriquecimento e Normalização de Dados](https://github.com/Redohairi)
-> Gateway de integração que atua como hub central para múltiplas fontes de dados externas.
-
-- **Impacto:** Redução de inconsistências nos dados internos via validação estrita de contratos
-- **Engenharia:** Integração com APIs de terceiros, serialização e normalização de *payloads* complexos com Pydantic
-- ![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white) ![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat&logo=fastapi&logoColor=white) ![Pydantic](https://img.shields.io/badge/Pydantic-E92063?style=flat&logo=pydantic&logoColor=white)
+<p align="left">
 
 ---
 
-## 🧰 Toolbox
+## 🧰 Stack Tecnológico
 
-**Backend & APIs**
+<details open>
+<summary><b>Backend & APIs</b></summary>
+<br>
 
 ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
 ![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white)
@@ -87,57 +92,51 @@
 ![Flask](https://img.shields.io/badge/Flask-000000?style=for-the-badge&logo=flask&logoColor=white)
 ![NodeJS](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)
 ![NestJS](https://img.shields.io/badge/NestJS-E0234E?style=for-the-badge&logo=nestjs&logoColor=white)
-![Ruby](https://img.shields.io/badge/Ruby-CC342D?style=for-the-badge&logo=ruby&logoColor=white)
 ![C++](https://img.shields.io/badge/C++-00599C?style=for-the-badge&logo=cplusplus&logoColor=white)
+</details>
 
-**Frontend**
+<details open>
+<summary><b>Frontend & UI</b></summary>
+<br>
 
 ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
 ![React](https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black)
 ![Next.js](https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white)
-![Angular](https://img.shields.io/badge/Angular-DD0031?style=for-the-badge&logo=angular&logoColor=white)
 ![TailwindCSS](https://img.shields.io/badge/Tailwind-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white)
+</details>
 
-**Banco de Dados**
+<details open>
+<summary><b>Banco de Dados & Dados</b></summary>
+<br>
 
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white)
 ![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white)
 ![SQLAlchemy](https://img.shields.io/badge/SQLAlchemy-D71F00?style=for-the-badge&logo=sqlalchemy&logoColor=white)
-![MongoDB Atlas](https://img.shields.io/badge/Atlas-47A248?style=for-the-badge&logo=mongodb&logoColor=white)
+</details>
 
-**Automação & Scraping**
+<details open>
+<summary><b>Automação, Infra & QA</b></summary>
+<br>
 
 ![Selenium](https://img.shields.io/badge/Selenium-43B02A?style=for-the-badge&logo=selenium&logoColor=white)
 ![Playwright](https://img.shields.io/badge/Playwright-45ba4b?style=for-the-badge&logo=playwright&logoColor=white)
-![BeautifulSoup4](https://img.shields.io/badge/BeautifulSoup4-59666C?style=for-the-goColor=white)
-![Requests](https://img.shields.io/badge/Requests-3776AB?style=for-the-badge&logo=python&logoColor=white)
-![UiPath](https://img.shields.io/badge/UiPath-FA4616?style=for-the-badge&logo=uipath&logoColor=white)
-![Power Automate](https://img.shields.io/badge/Power%20Automate-0066FF?style=for-the-badge&logo=powerautomate&logoColor=white)
-
-**Observabilidade & Infra**
-
-![Zabbix](https://img.shields.io/badge/Zabbix-CC0000?style=for-the-badge&logo=zabbix&logoColor=white)
-![Redmine](https://img.shields.io/badge/Redmine-B32024?style=for-the-badge&logo=redmine&logoColor=white)
 ![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
 ![GitHub Actions](https://img.shields.io/badge/GitHub%20Actions-2088FF?style=for-the-badge&logo=githubactions&logoColor=white)
-
-**QA & Boas Práticas**
-
 ![Pytest](https://img.shields.io/badge/Pytest-0A9EDC?style=for-the-badge&logo=pytest&logoColor=white)
-![TDD](https://img.shields.io/badge/TDD-Test%20Driven-brightgreen?style=for-the-badge)
 ![Clean Architecture](https://img.shields.io/badge/Clean%20Architecture-333333?style=for-the-badge)
 ![SOLID](https://img.shields.io/badge/SOLID-6DB33F?style=for-the-badge)
+</details>
 
 ---
 
-## 📈 GitHub Analytics
+## 📈 Métricas do GitHub
 
 <div align="center">
   <img src="github-metrics.svg" alt="GitHub Metrics" width="100%" />
 </div>
 
----
+<br>
 
 <div align="center">
-  <sub>Feito com ☕ e muitas linhas de código · UnB · Brasília</sub>
+  <sub>Construído com ☕, arquitetura limpa e muita dedicação · <b>UnB — Brasília, Brasil</b></sub>
 </div>
