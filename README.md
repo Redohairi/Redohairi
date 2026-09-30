@@ -41,11 +41,8 @@ Engenheiro de Software com sólida base acadêmica pela **Universidade de Brasí
 | **🚀 Construindo** | Plataforma de dados linguísticos multimodais para alinhamento de LLMs (RLHF/DPO) |
 | **🎓 Formação** | Licenciatura em Computação / Ciência da Computação — UnB |
 | **📚 Especialização** | Sistemas Distribuídos, Data Engineering avançado e MLOps |
-| **🎯 Objetivos** | Pesquisa aplicada em IA, NLP e arquitetura de modelos de linguagem |
 
 ---
-
-## 🚀 Projetos em Destaque
 
 ### 🌐 [Mebêngôkre Data Engine & API (mbg_pt)](https://github.com/Redohairi/mbg_pt) *(Projeto de Preservação Linguística & IA/RLHF)*
 > Plataforma backend corporativa e distribuída projetada para a preservação do idioma indígena Kayapó (Mebêngôkre). O sistema atua na orquestração, revisão e validação de dados multimodais (Áudio/Texto) para alinhar LLMs via *Direct Preference Optimization* (DPO) utilizando aceleradores Intel Gaudi.
@@ -128,15 +125,3 @@ Engenheiro de Software com sólida base acadêmica pela **Universidade de Brasí
 </details>
 
 ---
-
-## 📈 Métricas do GitHub
-
-<div align="center">
-  <img src="github-metrics.svg" alt="GitHub Metrics" width="100%" />
-</div>
-
-<br>
-
-<div align="center">
-  <sub>Construído com ☕, arquitetura limpa e muita dedicação · <b>UnB — Brasília, Brasil</b></sub>
-</div>
